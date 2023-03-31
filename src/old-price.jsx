@@ -1,7 +1,7 @@
 import React from "react";
 
-function OldPrice() {
-  return <del>55555 ₽</del>;
+function OldPrice({ value }) {
+  return <del>{value} ₽</del>;
 }
 
 export default OldPrice;

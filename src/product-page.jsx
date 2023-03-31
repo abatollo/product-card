@@ -13,21 +13,21 @@ function ProductPage({ product }) {
       <Title>{ product.name }</Title>
       <Code>{ product.code }</Code>
       <div style={{ display: "flex" }}>
-        <Gallery />
+        <Gallery src={ product.src } alt={ product.name } />
         <div>
           <p>
-            Цена: <OldPrice /> <Price />
+            Цена: <OldPrice value={product.oldPrice} /> <Price value={product.price} />
           </p>
           <div>
             Количество: <Counter />
           </div>
           <p>
-            <span>Доставка:</span> 1 апреля
+            <span>Доставка:</span> {product.delivery}
           </p>
           <button type="button">Купить</button>
         </div>
       </div>
-      <Description />
+      <Description text={product.description} />
     </section>
   );
 }

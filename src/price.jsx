@@ -1,7 +1,7 @@
 import React from "react";
 
-function Price() {
-  return <b>33333 ₽</b>;
+function Price({ value }) {
+  return <b>{value} ₽</b>;
 }
 
 export default Price;
