@@ -1,8 +1,11 @@
-import React from "react";
-import { StyledPrice } from './styled';
+import styled from "styled-components";
 
-function Price({ value }) {
-  return <StyledPrice>{value} ₽</StyledPrice>;
-}
+export const Price = styled.span.attrs((props) => ({
+  children: `${props.value} ₽`
+}))`
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 1;
+`;
 
 export default Price;

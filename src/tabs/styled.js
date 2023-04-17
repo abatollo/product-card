@@ -22,7 +22,8 @@ export const TitleButton = styled.button`
 `;
 
 export const TitleText = styled(Title)`
-  color: ${(props) => (props.active ? "#333 " : "#888")};
+  color: ${(props) =>
+    props.active ? props.theme.textColor : props.theme.textColorMuted};
 `;
 
 export const Content = styled.div`
