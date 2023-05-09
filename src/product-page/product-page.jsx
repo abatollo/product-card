@@ -56,7 +56,12 @@ function ProductPage({ product }) {
             <span>Доставка:</span>{" "}
             <DeliveryValue>{product.delivery}</DeliveryValue>
           </ProductInfoLine>
-          <BuyButton size="large">Купить</BuyButton>
+          <BuyButton
+            size="large"
+            onClick={() => console.log("открытие окна оформления заказа")}
+          >
+            Купить
+          </BuyButton>
           <Popularity count={product.comments.length} />
         </ProductInfo>
       </ProductWrapper>

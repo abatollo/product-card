@@ -1,12 +1,12 @@
 {
   "name": "product-card",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1",
-    "styled-components": "^5.3.9"
+    "styled-components": "^6.0.0-rc.1"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -5,7 +5,11 @@ function Description({ text }) {
   return (
     <>
       {text}
-      <DescriptionButton>Подробнее</DescriptionButton>
+      <DescriptionButton
+        onClick={() => console.log("скрытие/открытие всего текста")}
+      >
+        Подробнее
+      </DescriptionButton>
     </>
   );
 }

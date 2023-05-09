@@ -10,7 +10,11 @@ function Tabs({ tabs, activeTab = 0 }) {
           tabs.map((item, index) => {
             if (index === activeTab) {
               return (
-                <TitleButton active key={item.title}>
+                <TitleButton
+                  active
+                  key={item.title}
+                  onClick={() => console.log("переключение вкладки")}
+                >
                   <TitleText small active as="h2">
                     {item.title}
                   </TitleText>
@@ -18,7 +22,10 @@ function Tabs({ tabs, activeTab = 0 }) {
               );
             }
             return (
-              <TitleButton key={item.title}>
+              <TitleButton
+                key={item.title}
+                onClick={() => console.log("переключение вкладки")}
+              >
                 <TitleText small as="h2">{item.title}</TitleText>
               </TitleButton>
             );
