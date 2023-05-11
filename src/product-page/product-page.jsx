@@ -65,7 +65,7 @@ function ProductPage({ product }) {
           <Popularity count={product.comments.length} />
         </ProductInfo>
       </ProductWrapper>
-      <Tabs tabs={tabs} tabIndex={1} />
+      <Tabs tabs={tabs} />
     </StyledProductPage>
   );
 }

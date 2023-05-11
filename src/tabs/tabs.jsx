@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { TitleList, TitleButton, TitleText, Content } from "./styled";
 
-function Tabs({ tabs, activeTab = 0 }) {
+function Tabs({ tabs }) {
+  const [activeTab, setActiveTab] = useState(0);
+
   return (
     <div>
       <TitleList>
@@ -13,7 +15,6 @@ function Tabs({ tabs, activeTab = 0 }) {
                 <TitleButton
                   active
                   key={item.title}
-                  onClick={() => console.log("переключение вкладки")}
                 >
                   <TitleText small active as="h2">
                     {item.title}
@@ -24,7 +25,7 @@ function Tabs({ tabs, activeTab = 0 }) {
             return (
               <TitleButton
                 key={item.title}
-                onClick={() => console.log("переключение вкладки")}
+                onClick={() => setActiveTab(index)}
               >
                 <TitleText small as="h2">{item.title}</TitleText>
               </TitleButton>
