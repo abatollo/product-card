@@ -4,7 +4,7 @@ import Code from "../code/code";
 import Description from "../description/description";
 import Comments from "../comments/comments";
 import Popularity from "../popularity/popularity";
-import { Image } from "../elements";
+import Slider from "../slider/slider";
 import Tabs from "../tabs/tabs";
 import PopUp from "../popup/popup";
 import Order from "../order/order";
@@ -67,13 +67,7 @@ function ProductPage({ product, showInfoInAccordion }) {
         <Code>{product.code}</Code>
       </Header>
       <ProductWrapper>
-        <Image
-          width="200"
-          height="257"
-          maxWidth="200"
-          src={product.src}
-          alt={product.name}
-        />
+        <Slider images={product.images} />
         <ProductInfo>
           <ProductInfoLine>
             Цена:{" "}

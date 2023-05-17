@@ -4,7 +4,11 @@ export const product = {
   price: 33333,
   oldPrice: 55555,
   delivery: "1 апреля",
-  src: "https://i.ibb.co/gPCq1G4/image.png",
+  images: [
+    "https://i.ibb.co/gPCq1G4/image.png",
+    "https://i.ibb.co/yFhYrms/hb2NiWc.jpg",
+    "https://i.ibb.co/r6QCT38/NcXNhJb.jpg"
+  ],
   comments: [
     {
       id: 0,
