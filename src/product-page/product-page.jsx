@@ -22,8 +22,13 @@ import {
   DeliveryValue
 } from "./styled";
 
+const MAX_TEXT_SIZE = 200;
+const COMMENTS_COUNT = 3;
+
 function ProductPage({ product, showInfoInAccordion }) {
   const [productCount, setProductCount] = useState(1);
+  const [isShowAllDescription, setIsShowAllDescription] = useState(false);
+  const [commentsShow, setCommentsShow] = useState(COMMENTS_COUNT);
   const [isShowPopup, setIsShowPopup] = useState(false);
   const price = product.price * productCount;
   const oldPrice = product.oldPrice * productCount;
@@ -31,11 +36,27 @@ function ProductPage({ product, showInfoInAccordion }) {
   const tabs = [
     {
       title: "Описание",
-      content: <Description text={product.description} />
+      content: (
+        <Description
+          text={
+            isShowAllDescription
+              ? product.description
+              : product.description.slice(0, MAX_TEXT_SIZE)
+          }
+          onChowMore={() => setIsShowAllDescription(!isShowAllDescription)}
+          isShowAllDescription={isShowAllDescription}
+        />
+      )
     },
     {
       title: "Комментарии",
-      content: <Comments comments={product.comments} />
+      content: (
+        <Comments
+          comments={product.comments.slice(0, commentsShow)}
+          onShowMore={() => setCommentsShow(commentsShow + COMMENTS_COUNT)}
+          allCommentsLenght={product.comments.length}
+        />
+      )
     }
   ];
 
