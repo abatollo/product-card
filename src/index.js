@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <StrictMode>
     <ThemeProvider theme={theme}>
-      <ProductPage product={product} />
+      <ProductPage product={product} showInfoInAccordion />
     </ThemeProvider>
   </StrictMode>
 );
