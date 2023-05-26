@@ -1,15 +1,14 @@
 import { StrictMode } from "react";
 import ReactDOM from "react-dom/client";
-import { product } from "./mock";
 import { ThemeProvider } from "styled-components";
 import { theme } from "./theme/defaultTheme";
-import ProductPage from "./product-page/product-page";
+import App from "./app/app";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <StrictMode>
     <ThemeProvider theme={theme}>
-      <ProductPage product={product} showInfoInAccordion />
+      <App />
     </ThemeProvider>
   </StrictMode>
 );
