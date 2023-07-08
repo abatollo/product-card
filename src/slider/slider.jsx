@@ -1,7 +1,8 @@
 import React, { useRef } from "react";
 import { SwiperSlide } from "swiper/react";
-import "swiper/swiper.css";
-import SwiperCore, { Navigation } from "swiper";
+import "swiper/css";
+import SwiperCore from "swiper";
+import { Navigation } from 'swiper/modules';
 import { Image } from "../elements";
 import { StyledSider, StyledButton, SlyderWrapper } from "./styled";
 
