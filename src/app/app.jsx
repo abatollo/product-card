@@ -1,8 +1,9 @@
 import React from "react";
-import { products } from "../mock";
+import { products, main } from "../mock";
 import ProductPage from "../product-page/product-page";
 import Catalog from "../catalog/catalog";
 import Layout from "../layout/layout";
+import MainPage from "../main-page/main-page";
 
 import { BrowserRouter, Routes, Route, useParams } from "react-router-dom";
 
@@ -21,6 +22,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
+          <Route index element={<MainPage data={main} />} />
           <Route index element={<Catalog products={products} />} />
           <Route path="product">
             <Route
