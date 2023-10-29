@@ -23,13 +23,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<MainPage data={main} />} />
-          <Route index element={<Catalog products={products} />} />
-          <Route path="product">
-            <Route
-              path=":code"
-              element={<ProducrOr404 products={products} />}
-            />
-          </Route>
+          <Route path="/catalog" element={<Catalog products={products} />} />
+          <Route path="/product/:code" element={<ProducrOr404 products={products} />} />
         </Route>
       </Routes>
     </BrowserRouter>
