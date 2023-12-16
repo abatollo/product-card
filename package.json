@@ -1,11 +1,11 @@
 {
   "name": "product-card",
-  "version": "0.1.22",
+  "version": "0.1.23",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.20.1",
+    "react-router-dom": "^6.21.0",
     "react-scripts": "^5.0.1",
     "styled-components": "^6.1.1",
     "swiper": "^11.0.5"
@@ -38,18 +38,18 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-essentials": "^7.6.3",
-    "@storybook/addon-interactions": "^7.6.3",
-    "@storybook/addon-links": "^7.6.3",
-    "@storybook/blocks": "^7.6.3",
-    "@storybook/preset-create-react-app": "^7.6.3",
-    "@storybook/react": "^7.6.3",
-    "@storybook/react-webpack5": "^7.6.3",
+    "@storybook/addon-essentials": "^7.6.5",
+    "@storybook/addon-interactions": "^7.6.5",
+    "@storybook/addon-links": "^7.6.5",
+    "@storybook/blocks": "^7.6.5",
+    "@storybook/preset-create-react-app": "^7.6.5",
+    "@storybook/react": "^7.6.5",
+    "@storybook/react-webpack5": "^7.6.5",
     "@storybook/testing-library": "^0.2.2",
     "babel-plugin-named-exports-order": "^0.0.2",
     "eslint-plugin-storybook": "^0.6.15",
     "prop-types": "^15.8.1",
-    "storybook": "^7.6.3",
+    "storybook": "^7.6.5",
     "webpack": "^5.89.0"
   }
 }
